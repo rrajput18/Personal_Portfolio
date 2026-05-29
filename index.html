@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rakshit Rajput — Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="description"
+    content="Personal portfolio of Rakshit Rajput, BTech Information Technology student at NMIMS. Custom web projects, dashboards, and research.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome for Premium Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="styles.css?v=22">
+</head>
+
+<body>
+
+  <!-- Background Animated System -->
+  <div class="bg-grid-container">
+    <div class="bg-grid"></div>
+    <div class="bg-glow-orb-1"></div>
+    <div class="bg-glow-orb-2"></div>
+
+    <!-- SVG Curved Beams System (Aceternity style) -->
+    <svg class="bg-beams-svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="beam-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="var(--primary)" stop-opacity="0" />
+          <stop offset="30%" stop-color="var(--primary)" stop-opacity="0.8" />
+          <stop offset="70%" stop-color="var(--secondary)" stop-opacity="0.8" />
+          <stop offset="100%" stop-color="var(--secondary)" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="beam-grad-2" x1="0%" y1="100%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="var(--secondary)" stop-opacity="0" />
+          <stop offset="40%" stop-color="var(--primary)" stop-opacity="0.7" />
+          <stop offset="80%" stop-color="var(--secondary)" stop-opacity="0.7" />
+          <stop offset="100%" stop-color="var(--primary)" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+      <path class="beam-path beam-path-1" d="M-100,-100 C300,200 400,600 1100,1100" stroke="url(#beam-grad-1)"
+        stroke-width="1.8" stroke-linecap="round" />
+      <path class="beam-path beam-path-2" d="M100,-50 C400,300 200,800 900,1100" stroke="url(#beam-grad-2)"
+        stroke-width="1.5" stroke-linecap="round" />
+      <path class="beam-path beam-path-3" d="M-50,200 C350,400 650,800 1050,900" stroke="url(#beam-grad-1)"
+        stroke-width="1.2" stroke-linecap="round" />
+      <path class="beam-path beam-path-4" d="M300,-100 C500,400 800,600 1100,700" stroke="url(#beam-grad-2)"
+        stroke-width="1.5" stroke-linecap="round" />
+    </svg>
+  </div>
+
+  <!-- FIXED TOP NAVBAR -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Rakshit</a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV DROPDOWN -->
+  <div id="mobile-nav-menu" class="mobile-nav-menu">
+    <a href="#hero" class="mobile-nav-link">Home</a>
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#education" class="mobile-nav-link">Education</a>
+    <a href="#experience" class="mobile-nav-link">Experience</a>
+    <a href="#skills" class="mobile-nav-link">Skills</a>
+    <a href="#projects" class="mobile-nav-link">Projects</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+  </div>
+
+  <!-- MAIN SCROLL CONTAINER -->
+  <main class="main-container">
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section scroll-reveal">
+      <div class="hero-grid">
+
+        <!-- Left: Profile Avatar Squircle -->
+        <div class="hero-avatar-side">
+          <div class="avatar-glow-blob"></div>
+          <div class="avatar-squircle-container">
+            <img src="profile.jpg?v=2" alt="Rakshit Rajput" class="avatar-img">
+          </div>
+        </div>
+
+        <!-- Right: Text Intro -->
+        <div class="hero-text-side">
+          <span class="hero-pretitle">Hello, I'm</span>
+          <h1 class="hero-title">Rakshit Rajput</h1>
+          <div class="hero-subtitle">
+            <span class="typing-text">BTech IT Student</span>
+          </div>
+          <p class="hero-desc">
+            I’m an Information Technology student passionate about software development, database architectures, and
+            data analytics. I enjoy building intelligent solutions, analyzing data for insights, and creating projects
+            that solve real world problems.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-down"></i></a>
+            <a href="#contact" class="btn btn-secondary">Let's Connect <i class="fa-solid fa-envelope"></i></a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/rakshit-rajput-9b21912a7/" target="_blank" aria-label="LinkedIn"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/rrajput18" target="_blank" aria-label="GitHub"><i
+                class="fa-brands fa-github"></i></a>
+            <a href="mailto:rakshitrajput006@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section-container scroll-reveal">
+      <div class="section-card">
+        <div class="card-glow"></div>
+        <h2 class="section-heading">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am a driven BTech Information Technology student at the <strong>Mukesh Patel School of Technology
+                Management & Engineering (NMIMS University)</strong>. With an academic background spanning polytechnic
+              education and undergraduate engineering, I work with web architectures, databases, and data analytical
+              tools.
+            </p>
+            <p>
+              I have hands on experience building functional applications, developing data dashboards, integrating APIs,
+              and implementing smart systems.
+            </p>
+          </div>
+
+          <!-- Key Stats Grid -->
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-num">2.80</span>
+              <span class="stat-label">CGPA / NMIMS</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">80.8%</span>
+              <span class="stat-label">Diploma MSBTE</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Core Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">IIT-B</span>
+              <span class="stat-label">Java Certified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION TIMELINE SECTION -->
+    <section id="education" class="section-container scroll-reveal">
+      <h2 class="section-heading">Education</h2>
+      <div class="roadmap-timeline">
+        <div class="roadmap-line"></div>
+
+        <!-- Milestone 1: BTech NMIMS -->
+        <div class="roadmap-item">
+          <div class="roadmap-node">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="roadmap-content">
+            <span class="roadmap-date font-mono">2025 - 2027</span>
+            <h3 class="roadmap-title">BTech in Information Technology</h3>
+            <span class="roadmap-subtitle">MPSTME, NMIMS (Mumbai)</span>
+            <p class="roadmap-desc">
+              Deep focus on database structures, software modeling, relational engines, and web architectures. Currently
+              maintaining a 2.80/4.0 CGPA.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 2: Diploma MSBTE -->
+        <div class="roadmap-item">
+          <div class="roadmap-node">
+            <i class="fa-solid fa-school"></i>
+          </div>
+          <div class="roadmap-content">
+            <span class="roadmap-date font-mono">2022 - 2024</span>
+            <h3 class="roadmap-title">Diploma in Information Technology</h3>
+            <span class="roadmap-subtitle">K. K Wagh Polytechnic, Nashik</span>
+            <p class="roadmap-desc">
+              Completed MSBTE diploma curriculum with 80.80% overall. Obtained fundamentals of Java, relational
+              databases, software testing, and markup scripting.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 3: High School -->
+        <div class="roadmap-item">
+          <div class="roadmap-node">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="roadmap-content">
+            <span class="roadmap-date font-mono">Completed 2022</span>
+            <h3 class="roadmap-title">Secondary School Certificate</h3>
+            <span class="roadmap-subtitle">Esplaier The Experimental School</span>
+            <p class="roadmap-desc">
+              Laid strong foundations in mathematics, science, and computer applications with high academic performance.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL EXPERIENCE & TIMELINE SECTION -->
+    <section id="experience" class="section-container scroll-reveal">
+      <h2 class="section-heading">Professional Experience</h2>
+      <div class="exp-grid">
+
+        <!-- Experience 1: Golden Dreams Intern -->
+        <div class="exp-card">
+          <div class="exp-card-header">
+            <span class="exp-date font-mono">June 2023 - July 2023</span>
+            <div class="exp-icon"><i class="fa-solid fa-briefcase"></i></div>
+          </div>
+          <h3 class="exp-title">Frontend Developer Trainee</h3>
+          <span class="exp-subtitle">Golden Dreams Software Solutions</span>
+          <ul class="exp-list">
+            <li>Built and deployed a responsive Trip Booking website using HTML5, CSS3, and mobile-friendly guidelines.
+            </li>
+            <li>Designed and built a Coffee Cafe site using Bootstrap UI.</li>
+            <li>Gained proficiency in using Git and GitHub version control in a collaboration structure.</li>
+          </ul>
+        </div>
+
+        <!-- Experience 2: Research Publication -->
+        <div class="exp-card">
+          <div class="exp-card-header">
+            <span class="exp-date font-mono">March 2024</span>
+            <div class="exp-icon"><i class="fa-solid fa-book-open"></i></div>
+          </div>
+          <h3 class="exp-title">Research: E-Royalty Overload</h3>
+          <span class="exp-subtitle">IoT & Smart Systems Research Platform</span>
+          <p class="exp-desc">
+            Co-authored and published research on an IoT-based E-Royalty Management Platform integrated with real-time
+            vehicle overload detection using Arduino sensors, improving regulatory compliance and transport safety.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Achievements & Certs (Below Grid) -->
+      <div class="extra-timeline-row">
+
+        <div class="extra-block section-card">
+          <h3 class="extra-heading"><i class="fa-solid fa-certificate"></i> Training & Certifications</h3>
+          <div class="extra-item">
+            <span class="extra-meta font-mono">March 2024</span>
+            <h4>Java Certification Training</h4>
+            <span class="extra-loc">IIT Bombay Spoken Tutorial Project</span>
+            <p>Completed comprehensive Java certification program, covering object-oriented design, packages, exception
+              models, and swing-GUI frameworks.</p>
+          </div>
+        </div>
+
+        <div class="extra-block section-card">
+          <h3 class="extra-heading"><i class="fa-solid fa-trophy"></i> Key Achievements</h3>
+          <div class="ach-grid-figma">
+            <div class="ach-item-figma">
+              <div class="ach-icon"><i class="fa-solid fa-robot"></i></div>
+              <div class="ach-text">
+                <h5>Best Group Award</h5>
+                <p>Awarded "Best Performing Group" in the Robotics workshop held at college.</p>
+              </div>
+            </div>
+            <div class="ach-item-figma">
+              <div class="ach-icon"><i class="fa-solid fa-terminal"></i></div>
+              <div class="ach-text">
+                <h5>Blind Coding</h5>
+                <p>Competed and qualified in the Blind Coding Competition.</p>
+              </div>
+            </div>
+            <div class="ach-item-figma">
+              <div class="ach-icon"><i class="fa-solid fa-people-carry-box"></i></div>
+              <div class="ach-text">
+                <h5>College Coordinator</h5>
+                <p>Coordinated logistics and event workflow for Avinya Innovant festival.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section-container scroll-reveal">
+      <div class="section-card">
+        <div class="card-glow"></div>
+        <h2 class="section-heading">Core Skills</h2>
+
+        <div class="skills-grid-layout">
+
+          <div class="skill-group-card">
+            <h4><i class="fa-solid fa-laptop-code"></i> Programming</h4>
+            <div class="skill-badges">
+              <span>Java</span><span>Python</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span>
+            </div>
+          </div>
+
+          <div class="skill-group-card">
+            <h4><i class="fa-solid fa-brain"></i> Libraries & APIs</h4>
+            <div class="skill-badges">
+              <span>React</span><span>FastAPI</span><span>Pydantic</span><span>Vite</span><span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span><span>Scikit-Learn</span><span>Gemini
+                API</span>
+            </div>
+          </div>
+
+          <div class="skill-group-card">
+            <h4><i class="fa-solid fa-database"></i> Databases</h4>
+            <div class="skill-badges">
+              <span>MySQL</span><span>SQL</span><span>MongoDB</span>
+            </div>
+          </div>
+
+          <div class="skill-group-card">
+            <h4><i class="fa-solid fa-chart-pie"></i> Data Visualization</h4>
+            <div class="skill-badges">
+              <span>Power BI</span><span>Power Query</span><span>DAX</span><span>Tableau</span><span>Excel</span>
+            </div>
+          </div>
+
+          <div class="skill-group-card">
+            <h4><i class="fa-solid fa-sliders"></i> Tools & Tech</h4>
+            <div class="skill-badges">
+              <span>Git</span><span>GitHub</span><span>REST APIs</span><span>Figma</span><span>Bootstrap</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STAGGERED PROJECTS SECTION -->
+    <section id="projects" class="section-container scroll-reveal">
+      <h2 class="section-heading">Featured Projects</h2>
+
+      <div class="staggered-projects-list">
+
+        <!-- Project 1: Text Left, Card Right -->
+        <div class="stag-project-row row-normal">
+          <div class="stag-project-info">
+            <span class="stag-tag font-mono">2026</span>
+            <h3 class="stag-title">Resume Analyzer</h3>
+            <span class="stag-tagline">Evaluate resumes against job descriptions with AI</span>
+            <p class="stag-desc">
+              Developed a modern web application to evaluate resumes against job descriptions using a hybrid scoring
+              algorithm. Integrated Google Gemini 2.5 Flash API with Pydantic structured output models for zero-shot
+              dynamic skill extraction and contextual job matching.
+            </p>
+            <div class="stag-badges">
+              <span>FastAPI</span><span>React</span><span>Gemini
+                API</span><span>Python</span><span>Vite</span><span>Pydantic</span>
+            </div>
+          </div>
+
+          <div class="stag-project-visual">
+            <div class="visual-card">
+              <div class="visual-header">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              </div>
+              <div class="visual-body">
+                <h4>Resume Analyzer Demo</h4>
+                <p>AI-Powered Evaluation Platform</p>
+                <div class="visual-links">
+                  <a href="https://resume-analyzer-theta-weld.vercel.app/" target="_blank" class="visual-btn"><i
+                      class="fa-solid fa-arrow-up-right-from-square"></i> Open Live App</a>
+                  <a href="https://github.com/rrajput18" target="_blank" class="visual-icon-link"><i
+                      class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Card Left, Text Right -->
+        <div class="stag-project-row row-reverse">
+          <div class="stag-project-info">
+            <span class="stag-tag font-mono">2025</span>
+            <h3 class="stag-title">COVID-19 Economic Impact</h3>
+            <span class="stag-tagline">Data visualization & economic analytics dashboard</span>
+            <p class="stag-desc">
+              Designed an interactive dashboard visualizing COVID-19 impact on GDP with economic indicators. Used Power
+              Query to clean and aggregate GDP, COVID, and unemployment data, building custom KPIs and DAX measures.
+            </p>
+            <div class="stag-badges">
+              <span>Power BI</span><span>Power Query</span><span>DAX</span><span>Analytics</span>
+            </div>
+          </div>
+
+          <div class="stag-project-visual">
+            <div class="visual-card">
+              <div class="visual-header">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              </div>
+              <div class="visual-body">
+                <h4>COVID-19 Dashboard</h4>
+                <p>Economic GDP Impact Analytics</p>
+                <div class="visual-links">
+                  <a href="https://github.com/rrajput18/Covid-19-Impact-Analysis-on-Indian-GDP" target="_blank"
+                    class="visual-btn"><i class="fa-solid fa-code-fork"></i> Source Repository</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT / CONNECT SECTION -->
+    <section id="contact" class="section-container scroll-reveal">
+      <div class="section-card contact-over-card">
+        <div class="card-glow"></div>
+
+        <div class="contact-dual-grid">
+
+          <!-- Left info -->
+          <div class="contact-info-panel">
+            <h2 class="section-heading">Connect with Me</h2>
+            <p class="contact-intro-desc">
+              I am open to new collaborations, internships, and opportunities to build software solutions. Feel free to
+              reach out to discuss project ideas or just to connect!
+            </p>
+            <div class="connect-list-figma">
+              <a href="mailto:rakshitrajput006@gmail.com" class="connect-item-figma">
+                <i class="fa-solid fa-envelope"></i> rakshitrajput006@gmail.com
+              </a>
+              <a href="https://www.linkedin.com/in/rakshit-rajput-9b21912a7/" target="_blank"
+                class="connect-item-figma">
+                <i class="fa-brands fa-linkedin-in"></i> LinkedIn Profile
+              </a>
+              <a href="https://github.com/rrajput18" target="_blank" class="connect-item-figma">
+                <i class="fa-brands fa-github"></i> GitHub Repository
+              </a>
+            </div>
+          </div>
+
+          <!-- Right form -->
+          <div class="contact-form-panel">
+            <h3>Send an Enquiry</h3>
+            <form id="enquiry-form" class="direct-form">
+              <div class="form-row">
+                <div class="form-group-item">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group-item">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" required placeholder="john@example.com">
+                </div>
+              </div>
+              <div class="form-group-item">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" required placeholder="Project Collaboration">
+              </div>
+              <div class="form-group-item">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" required placeholder="Type your message here..."></textarea>
+              </div>
+              <button type="submit" id="submit-btn" class="form-submit-btn">
+                Send Message <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; Rakshit Rajput. Designed with Passion</p>
+    </div>
+  </footer>
+
+  <!-- Script Link -->
+  <script src="script.js?v=7"></script>
+</body>
+
+</html>

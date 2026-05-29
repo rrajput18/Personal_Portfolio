@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <style>
+    @media (prefers-color-scheme: dark) {
+      .bg-circle { stroke: rgba(255, 255, 255, 0.15); }
+      .letter-path { stroke: #ffffff; }
+      .accent-path { stroke: #f59e0b; }
+    }
+    @media (prefers-color-scheme: light) {
+      .bg-circle { stroke: rgba(0, 0, 0, 0.1); }
+      .letter-path { stroke: #0a0a0a; }
+      .accent-path { stroke: #d97706; }
+    }
+  </style>
+  <circle class="bg-circle" cx="12" cy="12" r="9.5" stroke-width="1.5" />
+  <path class="letter-path" d="M9 16V8h3.5a2.5 2.5 0 0 1 0 5H9" />
+  <path class="accent-path" d="M12 13l3.5 3.5" />
+</svg>
