@@ -1,4 +1,6 @@
-# Rakshit Rajput : Personal Portfolio
+# Rakshit Rajput — Personal Portfolio
+
+**Live Website**: [https://personal-portfolio-delta-roan.vercel.app/](https://personal-portfolio-delta-roan.vercel.app/)
 
 A premium, dark-theme, responsive single-column portfolio website built using modern, lightweight vanilla web technologies (HTML5, CSS3 variables, and vanilla ES6 JavaScript). It is styled with an Amber Gold accent theme, featuring smooth animations and high-performance interactive elements.
 
