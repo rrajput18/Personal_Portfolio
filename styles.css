@@ -1520,3 +1520,70 @@ img {
     gap: 15px;
   }
 }
+
+/* --- RESUME SECTION --- */
+.resume-container {
+  padding: 40px;
+}
+
+.resume-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.resume-desc-text {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.resume-actions-group {
+  display: flex;
+  gap: 12px;
+}
+
+.resume-viewer-frame {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow-md);
+  background-color: rgba(255, 255, 255, 0.02);
+  transition: all 0.3s ease;
+}
+
+.resume-viewer-frame:hover {
+  border-color: var(--card-hover-border);
+}
+
+.resume-viewer-frame iframe {
+  display: block;
+  width: 100%;
+  height: 800px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 30px 20px;
+  }
+  .resume-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .resume-actions-group {
+    width: 100%;
+  }
+  .resume-actions-group .btn {
+    flex: 1;
+    justify-content: center;
+  }
+  .resume-viewer-frame iframe {
+    height: 500px;
+  }
+}
