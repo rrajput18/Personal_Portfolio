@@ -1514,3 +1514,9 @@ img {
     font-size: 0.85rem;
   }
 }
+
+@media (max-width: 1100px) {
+  .nav-menu {
+    gap: 15px;
+  }
+}
